@@ -14,7 +14,7 @@ PKG_MAINTAINER:=Alexander Couzens <lynxis@fe80.eu>
 PKG_LICENSE:=Python-2.0
 
 PKG_SOURCE:=argparse-$(PKG_VERSION).tar.gz
-PKG_SOURCE_URL:=http://pypi.python.org/packages/source/p/argparse/
+PKG_SOURCE_URL:=http://pypi.python.org/packages/source/a/argparse/
 PKG_MD5SUM:=08062d2ceb6596fcbc5a7e725b53746f
 
 #PKG_BUILD_DIR:=$(BUILD_DIR)/-$(PKG_VERSION)

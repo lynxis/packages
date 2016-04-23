@@ -14,7 +14,7 @@ PKG_MAINTAINER:=Alexander Couzens <lynxis@fe80.eu>
 PKG_LICENSE:=BSD-3-Clause
 
 PKG_SOURCE:=MarkupSafe-$(PKG_VERSION).tar.gz
-PKG_SOURCE_URL:=http://pypi.python.org/packages/source/p/MarkupSafe/
+PKG_SOURCE_URL:=http://pypi.python.org/packages/source/M/MarkupSafe/
 PKG_MD5SUM:=f5ab3deee4c37cd6a922fb81e730da6e
 
 #PKG_BUILD_DIR:=$(BUILD_DIR)/-$(PKG_VERSION)

@@ -14,7 +14,7 @@ PKG_MAINTAINER:=Alexander Couzens <lynxis@fe80.eu>
 PKG_LICENSE:=Apache-2.0
 
 PKG_SOURCE:=argcomplete-$(PKG_VERSION).tar.gz
-PKG_SOURCE_URL:=http://pypi.python.org/packages/source/p/argcomplete/
+PKG_SOURCE_URL:=http://pypi.python.org/packages/source/a/argcomplete/
 PKG_MD5SUM:=89a3839096c9f991ad33828e72d21abf
 
 #PKG_BUILD_DIR:=$(BUILD_DIR)/-$(PKG_VERSION)

@@ -14,7 +14,7 @@ PKG_MAINTAINER:=Alexander Couzens <lynxis@fe80.eu>
 PKG_LICENSE:=BSD-2-Clause
 
 PKG_SOURCE:=configglue-$(PKG_VERSION).tar.gz
-PKG_SOURCE_URL:=http://pypi.python.org/packages/source/p/configglue/
+PKG_SOURCE_URL:=http://pypi.python.org/packages/source/c/configglue/
 PKG_MD5SUM:=9ad83551a2cb4cf20cbe936c9f80bd1e
 
 #PKG_BUILD_DIR:=$(BUILD_DIR)/-$(PKG_VERSION)
