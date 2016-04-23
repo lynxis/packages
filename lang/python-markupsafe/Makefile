@@ -18,6 +18,7 @@ PKG_SOURCE_URL:=http://pypi.python.org/packages/source/M/MarkupSafe/
 PKG_MD5SUM:=f5ab3deee4c37cd6a922fb81e730da6e
 
 #PKG_BUILD_DIR:=$(BUILD_DIR)/-$(PKG_VERSION)
+PKG_BUILD_DIR:=$(BUILD_DIR)/MarkupSafe-$(PKG_VERSION)
 PKG_BUILD_DEPENDS:=python
 
 include $(INCLUDE_DIR)/package.mk
@@ -29,7 +30,7 @@ define Package/python-MarkupSafe
   CATEGORY:=Languages
   TITLE:=python-MarkupSafe
   URL:=http://MarkupSafe.sourceforge.net
-  DEPENDS:=+python-light
+  DEPENDS:=+python
 endef
 
 define Package/python-MarkupSafe/description
@@ -47,4 +48,5 @@ define Package/python-MarkupSafe/install
 	    $(1)$(PYTHON_PKG_DIR)
 endef
 
+$(eval $(call PyPackage,python-MarkupSafe))
 $(eval $(call BuildPackage,python-MarkupSafe))

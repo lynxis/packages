@@ -7,50 +7,46 @@
 
 include $(TOPDIR)/rules.mk
 
-PKG_NAME:=python-argparse
-PKG_VERSION:=1.4.0
+PKG_NAME:=python-Jinja2
+PKG_VERSION:=2.8
 PKG_RELEASE:=1
 PKG_MAINTAINER:=Alexander Couzens <lynxis@fe80.eu>
-PKG_LICENSE:=Python-2.0
+PKG_LICENSE:=BSD-3-Clause
 
-PKG_SOURCE:=argparse-$(PKG_VERSION).tar.gz
-PKG_SOURCE_URL:=http://pypi.python.org/packages/source/a/argparse/
-PKG_MD5SUM:=08062d2ceb6596fcbc5a7e725b53746f
+PKG_SOURCE:=Jinja2-$(PKG_VERSION).tar.gz
+PKG_SOURCE_URL:=http://pypi.python.org/packages/source/J/Jinja2/
+PKG_MD5SUM:=edb51693fe22c53cee5403775c71a99e
 
 #PKG_BUILD_DIR:=$(BUILD_DIR)/-$(PKG_VERSION)
-PKG_BUILD_DIR:=$(BUILD_DIR)/argparse-$(PKG_VERSION)
+PKG_BUILD_DIR:=$(BUILD_DIR)/jinja2-$(PKG_VERSION)
 PKG_BUILD_DEPENDS:=python
 
 include $(INCLUDE_DIR)/package.mk
 $(call include_mk, python-package.mk)
 
-define Package/python-argparse
+define Package/python-Jinja2
   SUBMENU:=Python
   SECTION:=lang
   CATEGORY:=Languages
-  TITLE:=python-argparse
-  URL:=http://argparse.sourceforge.net
+  TITLE:=python-Jinja2
+  URL:=http://Jinja2.sourceforge.net
   DEPENDS:=+python
 endef
 
-define Package/python-argparse/description
-	serial port python bindings
-endef
-
-define PyPackage/python-argparse/filespec
-+|$(PYTHON_PKG_DIR)/$(PKG_NAME)-$(PKG_VERSION)-py2.7.egg
+define Package/python-Jinja2/description
+	A small but fast and easy to use stand-alone template engine written in pure python.
 endef
 
 define Build/Compile
 	$(call Build/Compile/PyMod,,install --prefix="$(PKG_INSTALL_DIR)/usr")
 endef
 
-define Package/python-argparse/install
+define Package/python-Jinja2/install
 	$(INSTALL_DIR) $(1)$(PYTHON_PKG_DIR)
 	$(CP) \
 	    $(PKG_INSTALL_DIR)$(PYTHON_PKG_DIR)/* \
 	    $(1)$(PYTHON_PKG_DIR)
 endef
 
-$(eval $(call PyPackage,python-argparse))
-$(eval $(call BuildPackage,python-argparse))
+$(eval $(call PyPackage,python-argcomplete))
+$(eval $(call BuildPackage,python-Jinja2))
