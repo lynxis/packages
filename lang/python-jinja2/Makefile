@@ -18,7 +18,7 @@ PKG_SOURCE_URL:=http://pypi.python.org/packages/source/J/Jinja2/
 PKG_MD5SUM:=edb51693fe22c53cee5403775c71a99e
 
 #PKG_BUILD_DIR:=$(BUILD_DIR)/-$(PKG_VERSION)
-PKG_BUILD_DIR:=$(BUILD_DIR)/jinja2-$(PKG_VERSION)
+PKG_BUILD_DIR:=$(BUILD_DIR)/Jinja2-$(PKG_VERSION)
 PKG_BUILD_DEPENDS:=python
 
 include $(INCLUDE_DIR)/package.mk
