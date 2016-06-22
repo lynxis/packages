@@ -31,7 +31,7 @@ define Package/lava-tool
   CATEGORY:=Languages
   TITLE:=lava-tool
   URL:=http://validation.linaro.org
-  DEPENDS:=+python +python-yaml +python-argparse +python-argcomplete +python-keyring +python-json-schema-validator +python-pyxdg +python-Jinja2
+  DEPENDS:=+python +python-yaml +python-argparse +python-argcomplete +python-keyring +python-json-schema-validator +python-pyxdg +python-Jinja2 +python-setuptools
 endef
 
 define Package/lava-tool/description
