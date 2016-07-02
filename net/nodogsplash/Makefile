@@ -15,7 +15,8 @@ PKG_RELEASE:=1
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)/
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=https://github.com/nodogsplash/nodogsplash.git
-PKG_SOURCE_VERSION:=v1.0.0
+PKG_SOURCE_PROTO:=git
+PKG_SOURCE_VERSION:=e5d10cde8cc975dada07da87c813db4b5c9154c2
 PKG_SOURCE_SUBDIR:=$(PKG_NAME)-$(PKG_VERSION)
 PKG_BUILD_PARALLEL:=1
 PKG_LICENSE:=GPL-2.0+
@@ -27,7 +28,7 @@ define Package/nodogsplash
 	SUBMENU:=Captive Portals
 	SECTION:=net
 	CATEGORY:=Network
-	DEPENDS:=+libpthread +iptables-mod-ipopt +libmicrohttpd-mini
+	DEPENDS:=+libpthread +iptables-mod-ipopt +libmicrohttpd-no-ssl
 	TITLE:=Open public network gateway daemon
 	URL:=https://github.com/nodogsplash/nodogsplash
 endef
