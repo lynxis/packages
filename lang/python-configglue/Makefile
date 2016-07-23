@@ -17,7 +17,7 @@ PKG_SOURCE_URL:=http://pypi.python.org/packages/source/c/configglue/
 PKG_MD5SUM:=ecc6016f66fc5043618cf8bed1c7e087
 
 PKG_BUILD_DIR:=$(BUILD_DIR)/configglue-$(PKG_VERSION)
-PKG_BUILD_DEPENDS:=python
+PKG_BUILD_DEPENDS:=python python-setuptools
 
 include $(INCLUDE_DIR)/package.mk
 $(call include_mk, python-package.mk)
