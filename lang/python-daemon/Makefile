@@ -31,10 +31,10 @@ define Package/python-daemon
   DEPENDS:=+python 
 endef
 
-define Package/python-python-daemon/description
+define Package/python-daemon/description
 	Library to implement a well-behaved Unix daemon process.
 endef
 
 $(eval $(call PyMod/Default))
-$(eval $(call PyPackage,python-python-daemon))
-$(eval $(call BuildPackage,python-python-daemon))
+$(eval $(call PyPackage,python-daemon))
+$(eval $(call BuildPackage,python-daemon))
