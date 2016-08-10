@@ -38,7 +38,7 @@ define Package/lava-dispatcher/description
 	Testing lava dispatcher
 endef
 
-define PyPackage/lava-tool/filespec
+define PyPackage/lava-dispatcher/filespec
 +|$(PYTHON_PKG_DIR)
 +|/usr/bin
 endef
