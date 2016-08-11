@@ -43,6 +43,16 @@ define PyPackage/lava-dispatcher/filespec
 +|/usr/bin
 endef
 
+define PyPackage/lava-dispatcher/install
+	$(INSTALL_DIR) $(1)$(PYTHON_PKG_DIR)
+	$(CP) \
+	    $(PKG_INSTALL_DIR)$(PYTHON_PKG_DIR)/* \
+	    $(1)$(PYTHON_PKG_DIR)
+	$(INSTALL_DIR) $(1)/usr/bin $(1)/etc/config
+	$(INSTALL_CONF) ./files/lava-dispatcher.uci $(1)/etc/config/lava
+	$(INSTALL_BIN) ./files/lava-slave.procd $(1)/etc/init.d/lava-slave
+endef
+
 define Build/Compile
 	$(call Build/Compile/PyMod,,\
 		install --prefix=/usr --root=$(PKG_INSTALL_DIR),)
