@@ -48,7 +48,7 @@ define PyPackage/lava-dispatcher/install
 	$(CP) \
 	    $(PKG_INSTALL_DIR)$(PYTHON_PKG_DIR)/* \
 	    $(1)$(PYTHON_PKG_DIR)
-	$(INSTALL_DIR) $(1)/usr/bin $(1)/etc/config
+	$(INSTALL_DIR) $(1)/usr/bin $(1)/etc/config $(1)/etc/init.d
 	$(INSTALL_CONF) ./files/lava-dispatcher.uci $(1)/etc/config/lava
 	$(INSTALL_BIN) ./files/lava-slave.procd $(1)/etc/init.d/lava-slave
 endef
