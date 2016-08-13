@@ -12,7 +12,7 @@ PKG_RELEASE:=1
 PKG_MAINTAINER:=Alexander Couzens <lynxis@fe80.eu>
 PKG_LICENSE:=LGPLv3
 
-PKG_SOURCE_URL:=https://git.linaro.org/lava/lava-dispatcher.git
+PKG_SOURCE_URL:=https://github.com/lynxis/lava-dispatcher.git
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_VERSION:=lede-2016.6
 PKG_SOURCE_SUBDIR:=$(PKG_NAME)
