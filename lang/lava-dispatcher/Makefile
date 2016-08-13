@@ -43,6 +43,10 @@ define PyPackage/lava-dispatcher/filespec
 +|/usr/bin
 endef
 
+define Package/lava-dispatcher/conffiles
+/etc/config/lava
+endef
+
 define PyPackage/lava-dispatcher/install
 	$(INSTALL_DIR) $(1)$(PYTHON_PKG_DIR)
 	$(CP) \
