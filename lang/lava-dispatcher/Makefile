@@ -31,7 +31,7 @@ define Package/lava-dispatcher
   CATEGORY:=Languages
   TITLE:=lava-dispatcher
   URL:=http://validation.linaro.org
-  DEPENDS:=+python +python-json-schema-validator +lava-tool +python-pexpect +python-configglue +python-yaml +python-pyserial +python-pyliblzma +python-requests +python-netifaces +python-nose +python-pyzmq +python-configobj +python-setuptools +python-ptyprocess
+  DEPENDS:=+python +python-json-schema-validator +lava-tool +python-pexpect +python-configglue +python-yaml +python-pyserial +python-pyliblzma +python-requests +python-netifaces +python-nose +python-pyzmq +python-configobj +python-setuptools +python-ptyprocess +simplejson
 endef
 
 define Package/lava-dispatcher/description
