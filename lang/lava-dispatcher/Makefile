@@ -7,14 +7,14 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=lava-dispatcher
-PKG_VERSION:=2016.4
+PKG_VERSION:=2016.6-coreboot
 PKG_RELEASE:=1
 PKG_MAINTAINER:=Alexander Couzens <lynxis@fe80.eu>
 PKG_LICENSE:=LGPLv3
 
 PKG_SOURCE_URL:=https://github.com/lynxis/lava-dispatcher.git
 PKG_SOURCE_PROTO:=git
-PKG_SOURCE_VERSION:=lede-2016.6
+PKG_SOURCE_VERSION:=coreboot
 PKG_SOURCE_SUBDIR:=$(PKG_NAME)
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION)-$(PKG_SOURCE_VERSION).tar.gz
 
