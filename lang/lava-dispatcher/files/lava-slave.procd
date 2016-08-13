@@ -48,6 +48,13 @@ create_instance() {
 		append options "--level $val "
 	fi
 
+	config_get val "$cfg" log_file
+	if [ -n "$val" ] ; then
+		append options "--log-file $val "
+	else
+		append options "--log-file /tmp/lava-slave.log "
+	fi
+
 	config_get val "$cfg" timeout
 	if [ -n "$val" ] ; then
 		append options "--timeout $val "

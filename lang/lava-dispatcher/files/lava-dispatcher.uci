@@ -1,8 +1,10 @@
 config slave
 	# required
+	option enabled 0
 	option master tcp://localhost:5556
 	option socket tcp://localhost:5555
 	# optional
 	option hostname fqdn-node.example.org
 	option log_level INFO
+	option log_file /tmp/lava-slave.log
 	option timeout 5
