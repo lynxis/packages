@@ -15,7 +15,7 @@ download_sdk() {
 # test_package will run on the `script` step
 test_packages() {
 	# search for new or modified packages. PKGS will hold a list of package like 'admin/muninlite admin/monit ...'
-	PKGS=$(git diff --stat origin/master | grep Makefile | grep -v '/files/' | awk '{ print $1}' | awk -F'/Makefile' '{ print $1 }')
+	PKGS=$(git diff --stat $TRAVIS_COMMIT_RANGE | grep Makefile | grep -v '/files/' | awk '{ print $1}' | awk -F'/Makefile' '{ print $1 }')
 
 	if [ -z "$PKGS" ] ; then
 		echo "No new or modified packages found!" >&2
