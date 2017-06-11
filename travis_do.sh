@@ -46,7 +46,8 @@ EOF
 
 		make defconfig
 		make package/$pkg_name/download
-		make package/$pkg_name/check V=s | grep -q WARNING && exit 1
+		make package/$pkg_name/check V=s | tee -a logoutput
+		grep -q WARNING logoutput && exit 1
 		rm -rf $HOME/tmp/$pkg_name/
 	done
 }
