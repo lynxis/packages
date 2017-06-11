@@ -49,6 +49,14 @@ EOF
 	done
 }
 
+export
+
+# for now we only build PR
+if [ "$TRAVIS_PULL_REQUEST" = false ] ; then
+	exit 0
+fi
+
+
 if [ $# -ne 1 ] ; then
 	cat <<EOF
 Usage: $0 (download_sdk|test_packages)
