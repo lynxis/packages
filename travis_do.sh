@@ -44,8 +44,10 @@ EOF
 		./scripts/feeds update
 		./scripts/feeds install $pkg_name
 
+		make defconfig
 		make package/$pkg_name/download
 		make package/$pkg_name/check V=s | grep -q WARNING && exit 1
+		rm -rf $HOME/tmp/$pkg_name/
 	done
 }
 
