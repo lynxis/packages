@@ -49,7 +49,7 @@ EOF
 	done
 }
 
-if [ $# -ne 2 ] ; then
+if [ $# -ne 1 ] ; then
 	cat <<EOF
 Usage: $0 (download_sdk|test_packages)
 
