@@ -53,6 +53,7 @@ export
 
 # for now we only build PR
 if [ "$TRAVIS_PULL_REQUEST" = false ] ; then
+	echo "Only Pull Requests are checked at the moment." >&2
 	exit 0
 fi
 
