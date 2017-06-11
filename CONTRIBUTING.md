@@ -1,6 +1,6 @@
 # Contributing Guidelines  
 (See <http://wiki.openwrt.org/doc/devel/packages> for overall format and construction)
-
+ 
 
 ### Basic guidelines
 
