@@ -45,7 +45,7 @@ EOF
 		./scripts/feeds install $pkg_name
 
 		make package/$pkg_name/download
-		make package/$pkg_name/check V=s | grep -q WARNING || exit 1
+		make package/$pkg_name/check V=s | grep -q WARNING && exit 1
 	done
 }
 
