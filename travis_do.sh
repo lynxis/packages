@@ -41,11 +41,11 @@ src-git luci https://git.lede-project.org/project/luci.git
 src-git routing https://git.lede-project.org/feed/routing.git
 src-git telephony https://git.lede-project.org/feed/telephony.git
 EOF
-		./scripts/feeds update
+		./scripts/feeds update >/dev/null
 		./scripts/feeds install $pkg_name
 
 		make defconfig
-		make package/$pkg_name/download
+		make package/$pkg_name/download V=s
 		make package/$pkg_name/check V=s | tee -a logoutput
 		grep -q WARNING logoutput && exit 1
 		rm -rf $HOME/tmp/$pkg_name/
