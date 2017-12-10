@@ -1,0 +1,20 @@
+Index: luai2c-1.1.2/lua-i2c.c
+===================================================================
+--- luai2c-1.1.2.orig/lua-i2c.c
++++ luai2c-1.1.2/lua-i2c.c
+@@ -40,7 +40,6 @@
+ #define I2CLUA_VERSION          "1.1.2"
+ #define I2CLUA_COPYRIGHT        "Copyright (C) 2017 Frank Edelhaeuser <mrpace2@gmail.com>"
+ #define I2CLUA_LICENSE          "MIT License"
+-#define I2CLUA_TIMESTAMP        __DATE__" "__TIME__
+ 
+ #define I2CLUA_SUCCESS           0
+ #define I2CLUA_ERR_BUS          -1
+@@ -311,7 +310,6 @@ LUALIB_API int luaopen_i2c(lua_State *L)
+         { "COPYRIGHT", I2CLUA_COPYRIGHT },
+         { "LICENSE", I2CLUA_LICENSE },
+         { "VERSION", I2CLUA_VERSION },
+-        { "TIMESTAMP", I2CLUA_TIMESTAMP },
+     };
+ 
+     if (luaL_newmetatable(L, I2CLUA_NAME)) {

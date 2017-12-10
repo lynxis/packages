@@ -9,7 +9,7 @@ include $(TOPDIR)/rules.mk
 
 PKG_NAME:=luai2c
 PKG_VERSION:=1.1.2
-PKG_RELEASE:=4
+PKG_RELEASE:=5
 PKG_MAINTAINER:=Frank Edelhaeuser <mrpace2@gmail.com>
 PKG_LICENSE:=MIT
 
